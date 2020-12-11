@@ -1,8 +1,8 @@
-name: 'Stage deploy'
+name: 'Production deploy'
 
 on:
   push:
-    branches: [ master ]
+    branches: [ production ]
 
 jobs:
   production:

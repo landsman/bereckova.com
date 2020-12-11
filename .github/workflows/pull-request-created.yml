@@ -3,7 +3,7 @@ name: 'Pull request - created'
 on:
   pull_request:
     branches:
-      - master
+      - production
       - stage
 
 jobs:
