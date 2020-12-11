@@ -1,6 +1,6 @@
-import styles from '../styles/Home.module.css'
-import SEO from "../src/components/seo";
 import React from "react";
+import styles from '~/styles/Home.module.css'
+import SEO from "~/components/seo";
 
 export default function Home() {
   return (
