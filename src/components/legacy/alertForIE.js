@@ -15,11 +15,7 @@ export default class AlertForIE extends Component {
         } = this;
 
         return (
-            <div
-                className={`alert alert-warning alert-dismissible fade p-4 h6 m-0 text-center ${
-                    enabled ? 'show' : 'd-none'
-                }`}
-            >
+            <div style={{display: enabled ? 'block' : 'none'}}>
                 {children}
             </div>
         );
