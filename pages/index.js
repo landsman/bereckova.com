@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import SEO from "../src/components/seo";
 import React from "react";
@@ -10,7 +9,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Bereckova.com
         </h1>
 
         <p className={styles.description}>
@@ -55,8 +54,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Powered by StudioArt.cz
         </a>
       </footer>
     </div>
