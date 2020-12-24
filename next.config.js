@@ -1,6 +1,7 @@
+const withPWA = require('next-pwa');
 require('dotenv').config();
 
-const config = {
+module.exports = (withPWA({
     publicRuntimeConfig: {
         BASE_URL: process.env.BASE_URL,
         DEV_MODE: process.env.DEV_MOD,
@@ -12,6 +13,15 @@ const config = {
     },
     serverRuntimeConfig: {
     },
+    pwa: {
+        disable: process.env.NODE_ENV === 'development',
+        dest: 'public',
+        swSrc: 'src/service-worker.js',
+    },
+    devIndicators: {
+        autoPrerender: false,
+    },
+    poweredByHeader: 'landsman@studioart.cz',
     webpack: (config, { isServer }) => {
         // Fixes npm packages that depend on `fs` module
         if (!isServer) {
@@ -19,6 +29,4 @@ const config = {
         }
         return config;
     },
-};
-
-module.exports = config;
+}));
