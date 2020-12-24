@@ -25,7 +25,7 @@ RUN npm ci
 # and purge the development dependencies
 COPY . .
 
-RUN npm run build
+RUN npm run predeploy
 
 # Start the server for Next.js using Node.js
 CMD ["npm", "run", "start"]
