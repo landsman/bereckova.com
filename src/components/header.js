@@ -26,7 +26,7 @@ Header.defaultProps = {
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 25px;
   text-align: center;
 `;
 
