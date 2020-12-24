@@ -1,7 +1,6 @@
-const withPWA = require('next-pwa');
 require('dotenv').config();
 
-module.exports = (withPWA({
+module.exports = {
     publicRuntimeConfig: {
         BASE_URL: process.env.BASE_URL,
         DEV_MODE: process.env.DEV_MOD,
@@ -34,4 +33,4 @@ module.exports = (withPWA({
         }
         return config;
     },
-}));
+};
