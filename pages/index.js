@@ -1,18 +1,14 @@
 import React from "react";
 import styles from '~/styles/Home.module.css'
 import SEO from "~/components/seo";
+import Layout from "~/components/layout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <SEO title={'Welcome human!'} />
+    <Layout>
+      <SEO title={''} />
 
       <main className={styles.main}>
-
-        <img
-          src={'/layout/logo.png'}
-          alt='logo'
-        />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -44,16 +40,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by StudioArt.cz
-        </a>
-      </footer>
-    </div>
+    </Layout>
   )
 }
