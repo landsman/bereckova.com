@@ -10,6 +10,11 @@ module.exports = (withPWA({
         FORM: {
             CONTACT: ''
         },
+        CONTACT: {
+            email: 'anezka@bereckova.com',
+            ig: 'https://www.instagram.com/anezkabereckova/',
+            fb: 'https://www.facebook.com/anezkabereckovafashion'
+        }
     },
     serverRuntimeConfig: {
     },

@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
+import getConfig from "next/config";
+const { publicRuntimeConfig: { CONTACT } } = getConfig();
+
 export default function Header() {
   return (
       <Wrapper>
@@ -11,6 +14,19 @@ export default function Header() {
                 alt='Anežka Berecková'
             />
           </LogoLink>
+          <ContactWrapper>
+              <ul>
+                  <li>
+                      <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+                  </li>
+                  <li>
+                      <a href={CONTACT.ig} target={'_blank'}>instagram</a>
+                  </li>
+                  <li>
+                      <a href={CONTACT.fb} target={'_blank'}>facebook</a>
+                  </li>
+              </ul>
+          </ContactWrapper>
       </Wrapper>
   )
 }
@@ -42,4 +58,8 @@ const LogoLink = styled.a`
 const LogoImage = styled.img`
   max-width: 100%;
   height: auto;
+`;
+
+const ContactWrapper = styled.div`
+  padding: 35px 0;
 `;
