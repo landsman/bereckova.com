@@ -16,4 +16,5 @@ const Wrapper = styled.div`
   padding: 35px 0;
   margin-top: 150px;
   text-align: center;
+  border-top: 1px solid #EEE;
 `;

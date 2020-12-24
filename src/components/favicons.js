@@ -26,12 +26,12 @@ const getFavicons = () => {
             <link
                 rel="apple-touch-icon"
                 sizes="76x76"
-                href="/public/favicons/apple-icon-76x76.png"
+                href="/favicons/apple-icon-76x76.png"
             />
             <link
                 rel="apple-touch-icon"
                 sizes="114x114"
-                href="/public/favicons/apple-icon-114x114.png"
+                href="/favicons/apple-icon-114x114.png"
             />
             <link
                 rel="apple-touch-icon"

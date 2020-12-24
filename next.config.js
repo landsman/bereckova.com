@@ -5,7 +5,7 @@ module.exports = {
         BASE_URL: process.env.BASE_URL,
         DEV_MODE: process.env.DEV_MOD,
         SENTRY_DSN: process.env.SENTRY_DSN,
-        GTM: process.env.GTM,
+        GTM: process.env.GTM || 'xxx',
         FORM: {
             CONTACT: ''
         },
