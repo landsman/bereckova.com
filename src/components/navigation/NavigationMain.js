@@ -37,14 +37,14 @@ const Item = styled.li`
 
   @media(max-width: 600px) {
     display: block;
-    margin-top: 15px;
+    margin-top: 0;
     
       &:before {
         content: "";
-        width: 150px;
+        width: 100px;
         height: 1px;
         display: block;
-        margin: 15px auto;
+        margin: 0 auto;
         background: #EEE;
       }
     
@@ -75,15 +75,15 @@ const Item = styled.li`
         }
       }
   }
-
-
-  
-
- 
 `;
 
 const Link = styled.a`
   &:hover {
     text-decoration: underline;
   }
+  
+    @media(max-width: 600px) {
+      display: block;
+      padding: 15px 0;
+    }
 `;
