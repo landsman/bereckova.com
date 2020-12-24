@@ -68,9 +68,7 @@ function MyApp({ Component, pageProps, err }) {
             <ThemeProvider theme={theme}>
               <GlobalStyle />
               <LoadingOverlay>
-                <AppWrapper>
-                  <Component {...pageProps} err={err} />
-                </AppWrapper>
+                <Component {...pageProps} err={err} />
               </LoadingOverlay>
             </ThemeProvider>
           </AppProvider>
@@ -85,10 +83,3 @@ function MyApp({ Component, pageProps, err }) {
 export default MyApp;
 
 export {theme}
-
-const AppWrapper = styled.div`
-    position: relative;
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-`;

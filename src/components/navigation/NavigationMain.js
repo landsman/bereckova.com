@@ -34,21 +34,51 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  display: inline-block;
-  margin-left: 15px;
-  
-  &:before {
-    content: "|";
-    padding-right: 15px;
-  }
-  
-  &:first-child {
-    margin-left: 0;
+
+  @media(max-width: 600px) {
+    display: block;
+    margin-top: 15px;
     
-    &:before {
-      display: none;
-    }
+      &:before {
+        content: "";
+        width: 150px;
+        height: 1px;
+        display: block;
+        margin: 15px auto;
+        background: #EEE;
+      }
+    
+      &:first-child {
+        margin-left: 0;
+        
+        &:before {
+          display: none;
+        }
+      }
+    
   }
+
+  @media(min-width: 600px) {
+    display: inline-block;
+    margin-left: 15px;
+    
+      &:before {
+        content: "|";
+        padding-right: 15px;
+      }
+      
+      &:first-child {
+        margin-left: 0;
+        
+        &:before {
+          display: none;
+        }
+      }
+  }
+
+
+  
+
  
 `;
 
