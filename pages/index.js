@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <SEO
-        title={'Anežka Berecková - fashion designer'}
+        title={'Anežka Berecková - Fashion designer from Zlín ADO'}
         titleSuffix={false}
       />
     </Layout>

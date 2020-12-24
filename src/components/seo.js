@@ -50,7 +50,7 @@ function SEO(
             <meta name="author" content="StudioArt.cz" />
             <title>
                 {(finalProps.title)}
-                {finalProps.titleSuffix ? ' — Bereckova' : ''}
+                {finalProps.titleSuffix ? ' — Anezka Bereckova' : ''}
             </title>
             {finalProps.noIndex && (
                 <meta name={'robots'} content={'noindex, nofollow'} />
