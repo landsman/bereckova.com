@@ -8,14 +8,11 @@ export default function Home() {
       <SEO title={'Welcome human!'} />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bereckova.com
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <img
+          src={'/layout/logo.png'}
+          alt='logo'
+        />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
