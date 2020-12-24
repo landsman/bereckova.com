@@ -13,6 +13,9 @@
 /.next/
 /out/
 
+# lingui
+src/locales/*.js
+
 # production
 /build
 

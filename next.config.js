@@ -21,7 +21,7 @@ module.exports = (withPWA({
     pwa: {
         disable: process.env.NODE_ENV === 'development',
         dest: 'public',
-        swSrc: 'src/service-worker.js',
+        swSrc: 'service-worker.js',
     },
     devIndicators: {
         autoPrerender: false,
