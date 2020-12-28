@@ -16,7 +16,8 @@ export default function Header() {
 }
 
 Header.propTypes = {
-    children: PropTypes.node.isRequired
+    bigHeader: PropTypes.boolean,
+    product: PropTypes.boolean
 };
 
 Header.defaultProps = {
