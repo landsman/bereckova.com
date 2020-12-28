@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SEO from "~/components/seo";
 import Layout from "~/components/layout";
 import Vimeo from "~/components/vimeo";
+import FullWidth from "~/components/full-width";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         title={'Anežka Berecková - Fashion designer from Zlín ADO'}
         titleSuffix={false}
       />
-      <Promo>
+      <FullWidth>
+          <Promo>
           <Vimeo
               videoId={246028035}
               width="640"
@@ -19,7 +21,8 @@ export default function Home() {
               autoplay={1}
               loop={1}
           />
-      </Promo>
+          </Promo>
+      </FullWidth>
     </Layout>
   )
 }
