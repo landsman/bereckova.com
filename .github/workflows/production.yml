@@ -26,7 +26,6 @@ jobs:
 
       - name: 'Build Docker image'
         env:
-          CRYPTO_DEFAULT_KEY: ${{ secrets.CRYPTO_DEFAULT_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           SENTRY_URL: ${{ secrets.SENTRY_URL }}
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
