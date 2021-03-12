@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@lingui/react": "^3.4.0",
-    "@sentry/browser": "^5.29.0",
+    "@sentry/browser": "^6.2.2",
     "@trisbee/lingui-locale-cleaner": "^1.2.1",
     "dotenv": "^8.2.0",
     "locale": "^0.1.0",
