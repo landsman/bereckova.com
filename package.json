@@ -43,6 +43,6 @@
     "prop-types": "^15.7.2",
     "styled-components": "^5.2.1",
     "workbox-precaching": "^6.0.2",
-    "workbox-strategies": "^6.0.2"
+    "workbox-strategies": "^6.1.2"
   }
 }
